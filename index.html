@@ -10,7 +10,9 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="header-nav">
+
+      <nav class="header-nav">
+
         <div class="header-social">
           <a href="#" target="_blank">
             <img src="img/inst-header-footer-icon.svg" alt="инстаграм">
@@ -22,99 +24,84 @@
             <img src="img/telega-header-footer-icon.svg" alt="телеграм">
           </a>
         </div>
-        <div class=" title header-menu">
-          <ul class="header-list">
-            <li class="header-item">
+
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
               <a href="#services">
                 услуги
               </a>
             </li>
-            <li class="header-item">
+            <li class="header-menu-item">
               <a href="#about-club">
                 о клубе
               </a>
             </li>
-            <li class="header-item">
+            <li class="header-menu-item">
               <a href="#coaches">
                 тренеры
               </a>
             </li>
-            <li class="header-item">
+            <li class="header-menu-item">
               <a href="#reviews">
                 отзывы
               </a>
             </li>
-            <li class="header-item">
+            <li class="header-menu-item">
               <a href="#news">
                 новости
               </a>
             </li>
-            <li class="header-item">
+            <li class="header-menu-item">
               <a href="#contacts">
                 контакты
               </a>
             </li>
           </ul>
-        </div>
-      </div>
-      <span class="header-phone">
+
+          <div class="header-content">
+            <img src="img/logo.svg" alt="Логотип" class="header-logo">
+            <h1 class="header-title">Инвестируйте в своё здоровье</h1>
+            <p class="header-description">Ждём вас в нашем фитнес-клубе</p>
+            <button class="header-button">Записаться</button>
+          </div>
+
+      </nav>
+      <div class="header-phone">
         <a href="tel:+78005553050">8&nbsp;800&nbsp;555 30&nbsp;50</a>
-      </span>
+      </div>
     </div>
   </header>
+
   <main class="main">
     <section id="services" class="services">
       <div class="container">
-        <h2 class="title services-title">
-          наши услуги
-        </h2>
+        <h2 class="title services-title">Наши услуги</h2>
         <ul class="services-list">
           <li class="services-item">
-            <h3 class="title dervices-item-title">
-              тренажерный зал
-            </h3>
-            <span class="services-item-price">
-              2500&nbsp;₽
-            </span>
-            <span class="services-item-month">
-              в&nbsp;месяц
-            </span>
+            <h3 class="title services-item-title">Тренажерный зал</h3>
+            <span class="services-item-price">2500&nbsp;₽</span>
+            <span class="services-item-month">в&nbsp;месяц</span>
           </li>
           <li class="services-item">
-            <h3 class="title dervices-item-title">
-              бассейн
-            </h3>
-            <span class="services-item-price">
-              1800&nbsp;₽
-            </span>
-            <span class="services-item-month">
-              в&nbsp;месяц
-            </span>
+            <h3 class="title services-item-title">Бассейн</h3>
+            <span class="services-item-price">1200&nbsp;₽</span>
+            <span class="services-item-month">в&nbsp;месяц</span>
           </li>
           <li class="services-item">
-            <h3 class="title dervices-item-title">
-              питалес
-            </h3>
-            <span class="services-item-price">
-              1200&nbsp;₽
-            </span>
-            <span class="services-item-month">
-              в&nbsp;месяц
-            </span>
+            <h3 class="title services-item-title">Пилатес</h3>
+            <span class="services-item-price">1800&nbsp;₽</span>
+            <span class="services-item-month">в&nbsp;месяц</span>
           </li>
         </ul>
       </div>
     </section>
+
     <section id="about-club" class="about-club">
       <div class="container">
-        <h3 class="title about-title">
-          Train hard
-        </h3>
-        <ul class="about-list">
-          <li class="about-item">
-            <h3 class="title about-subtitle">
-              Фитнесс-клуб &#8470;&nbsp;1
-            </h3>
+        <h2 class="title about-title">Train Hard</h2>
+        <div class="about-content">
+          <div class="about-description">
+            <h3 class="title about-subtitle">Фитнесс-клуб №1</h3>
             <p class="about-item-descr">
               С&nbsp;нами вы&nbsp;можете быть уверены в&nbsp;безопасности
               своего здоровья&nbsp;&mdash; дипломированный тренерский состав
@@ -124,43 +111,37 @@
               и&nbsp;к&nbsp;каждому из&nbsp;них у&nbsp;нас индивидуальный подход, соответствующий
               самым требовательным запросам.
             </p>
-          </li>
-          <li class="about-item">
-            <div class="about-item-year">
-              <span class="item-year-numbers">
-                2005
-              </span>
-              <span class="item-year-descr">
-                Год основания фитнесс-клуба
-              </span>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat">
+              <span class="stat-number">2005</span>
+              <span class="stat-description">Год основания фитнесс-клуба</span>
             </div>
-            <div class="about-item-coach">
-              <span class="item-coach-numbers">
-                18
-              </span>
-              <span class="item-coach-descr">
-                Профессиональных тренеров
-              </span>
+            <div class="about-stat">
+              <span class="stat-number">18</span>
+              <span class="stat-description">Профессиональных тренеров</span>
             </div>
-            <div class="about-item-clients">
-              <span class="item-clients-numbers">
-                Постоянных клиентов
-              </span>
-              <span class="item-clients-descr">
-                &gt;300
-              </span>
+            <div class="about-stat">
+              <span class="stat-number">&gt;300</span>
+              <span class="stat-description">Постоянных клиентов</span>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <article class="row">
       <div class="container">
         <div class="row-social-icon">
-          <img src="img/row-inst-icon.svg" alt="инстаграм">
-          <img src="img/row-vk-icon.svg" alt="вконтакте">
-          <img src="img/row-telega-icon.svg" alt="телеграм">
+          <a href="#" target="_blank">
+            <img src="img/row-inst-icon.svg" alt="инстаграм">
+          </a>
+          <a href="#" target="_blank">
+            <img src="img/row-vk-icon.svg" alt="вконтакте">
+          </a>
+          <a href="#" target="_blank">
+            <img src="img/row-telega-icon.svg" alt="телеграм">
+          </a>
         </div>
         <img class="logo row-logo" src="img/logo.svg" alt="логотип">
       </div>
@@ -250,6 +231,7 @@
         </li>
       </ul>
     </section>
+
     <section id="reviews" class="reviews">
       <div class="container">
         <h2 class="title reviews-title">
@@ -258,7 +240,7 @@
         <ul class="reviews-list">
           <li class="reviews-item">
             <div class="reviews-item-content">
-              <div class="reviews-item-star">
+              <div class="reviews-item-stars">
                 <img src="img/star.svg" alt="5 звёзд из 5">
                 <img src="img/star.svg" alt="">
                 <img src="img/star.svg" alt="">
@@ -283,7 +265,7 @@
           </li>
           <li class="reviews-item">
             <div class="reviews-item-content">
-              <div class="reviews-item-star">
+              <div class="reviews-item-stars">
                 <img src="img/star.svg" alt="5 звёзд из 5">
                 <img src="img/star.svg" alt="">
                 <img src="img/star.svg" alt="">
@@ -295,7 +277,7 @@
                 дизайн реcепшина отличный, электронные браслеты
                 облегчают использование клуба, тренажёрные залы
                 по&nbsp;многим спорт направлениям, квалифицированный
-                персонал, доброжилательная атмосфера, отличные бассейны, разнообразие в&nbsp;программах
+                персонал, доброжелательная атмосфера, отличные бассейны, разнообразие в&nbsp;программах
               </p>
               <div class="preciews-item-pep">
                 <span class="item-pep-name">
@@ -309,7 +291,7 @@
           </li>
           <li class="reviews-item">
             <div class="reviews-item-content">
-              <div class="reviews-item-star">
+              <div class="reviews-item-stars">
                 <img src="img/star.svg" alt="5 звёзд из 5">
                 <img src="img/star.svg" alt="">
                 <img src="img/star.svg" alt="">
@@ -334,14 +316,15 @@
         </ul>
       </div>
     </section>
+
     <section id="news" class="news">
       <div class="content">
-        <h3 class="title news-title">
+        <h2 class="title news-title">
           новости
-        </h3>
+        </h2>
         <ul class="news-list">
           <li class="news-item">
-            <div class="news-item-text">
+            <div class="news-item-content">
               <time datetime="2022-03-20" class="news-item-date">
                 20.03.2022
               </time>
@@ -351,9 +334,9 @@
             </div>
           </li>
           <li class="news-item">
-            <div class="news-item-text">
+            <div class="news-item-content">
               <time datetime="2022-03-15" class="news-item-date">
-                2022.03.15
+                15.03.2022
               </time>
               <p class="news-item-descr">
                 Весь апрель скидка&nbsp;15% на&nbsp;годовой абонемент
@@ -361,9 +344,9 @@
             </div>
           </li>
           <li class="news-item">
-            <div class="news-item-text">
+            <div class="news-item-content">
               <time datetime="2022-03-12" class="news-item-date">
-                2022.03.12
+                12.03.2022
               </time>
               <p class="news-item-descr">
                 Информация для членов клуба Hard Train
@@ -374,6 +357,8 @@
       </div>
     </section>
   </main>
+
+  <footer class="footer">
     <section id="contacts" class="contacts">
       <div class="container">
         <a href="#" target="_blank">
@@ -439,5 +424,6 @@
         <p>Разработка и&nbsp;маркетинг WebCanape</p>
       </div>
     </section>
+  </footer>
 </body>
 </html>
