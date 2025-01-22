@@ -22,16 +22,6 @@ body {
   min-width: 1200px;
 }
 
-@font-face {
-  font-family: "Jost";
-  src: url(../fonts/Jost-variable.woff);
-  src:local("Jost-variable"),
-  url('../fonts/Jost-variable.woff') format(woff),
-  url('../fonts/Jost-variable.woff2') format(woff2);
-  font-style: normal;
-  font-display: swap;
-}
-
 /* glob */
 .list-reset{
   margin: 0;
@@ -44,6 +34,21 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 209px;
+  height: 60px;
+  background: #95e82c;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
 }
 
 .flex {
@@ -60,16 +65,11 @@ body {
   margin-bottom: 60px;
 }
 
-.section-offset {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 /*header*/
 
 .headedr-container {
   padding: 50px 0 185px;
-
+  font-family: "Jost", sans-serif;
 }
 
 .header-section {
@@ -82,6 +82,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  font-family: "Jost", sans-serif;
 }
 
 .header-social {
@@ -98,8 +99,7 @@ body {
   display: flex;
   margin-right: 112px;
   text-transform: uppercase;
-  font-family: 'Jost';
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -107,31 +107,66 @@ body {
   margin-right: 50px;
 }
 
+.header-phone {
+  padding-left: 30px;
+  background-image: url(../img/phone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #95E82C;
+}
+
 .header-content {
   display: flex;
   flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 500;
   align-items: center;
 }
 
 .header-logo {
   width: 110px;
-  margin-bottom: 105px;
+  margin-bottom: 60px;
 }
 
 .header-title {
   margin: 0;
   margin-bottom: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 55px;
+  color: #95e82c;
 }
 
 .header-description {
   margin: 0;
   margin-bottom: 61px;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 117%;
+  color: #fff;
 }
 
 /*services*/
 
+.services {
+  background-color: #F4F4F4;
+}
+
+.services-container {
+  padding: 100px 0;
+  font-family: "Jost", sans-serif;
+}
+
 .services-title {
   text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 129%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
 }
 
 .services-list {
@@ -143,9 +178,22 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 185px 40px 47px;
-  min-width: 380px;
-  min-height: 400px;
-  outline: 1px solid black;
+  width: 380px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services-gym-pic {
+  background-image: url('../img/services-1.jpg');
+}
+
+.services-swim-pic {
+  background-image: url('../img/services-2.jpg');
+}
+
+.services-pilates-pic {
+  background-image: url('../img/services-3.jpg');
 }
 
 .services-item:not(:nth-child(3n)){
@@ -155,16 +203,36 @@ body {
 .services-item-title {
   margin: 0;
   margin-bottom: 82px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
 }
 
 .services-item-price {
-  margin-bottom: 26px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.services-item-month {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
 }
 
 /*about-club*/
 
 .about-club-conrainer {
   display: flex;
+  padding: 100px 0;
+  font-family: "Jost", sans-serif;
 }
 
 .about-content {
@@ -175,15 +243,29 @@ body {
 .about-title {
   margin: 0;
   margin-bottom: 17px;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 118%;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .about-subtitle {
   margin: 0;
   margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 187%;
+  text-transform: uppercase;
+  color: #95e82c;
 }
 
 .about-descr {
   margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144%;
+  color: #444;
 }
 
 .about-stats {
@@ -209,23 +291,45 @@ body {
   margin: 0;
   margin-right: 23px;
   font-size: 55px;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 118%;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .stat-description {
   margin: 0;
   font-size: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000;
 }
 
 /* article */
 
+.article-section {
+  background-image: url('../img/row-backgroung.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .article-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 65px 0;
+
 }
 
 .row-social {
   width: 200px;
   font-size: 0;
+}
+
+.row-logo {
+  min-height: 150px;
 }
 
 .row-social-icon:not(:last-child) {
@@ -234,8 +338,18 @@ body {
 
 /* coaches */
 
+.coaches-container {
+  padding: 100px 0;
+  font-family: "Jost", sans-serif;
+}
+
 .coaches-title {
   text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .coaches-list {
@@ -249,7 +363,7 @@ body {
   height: 120px;
   margin-right: 20px;
   margin-bottom: 20px;
-  outline: 1px black solid;
+  outline: 1px #DDDDDD solid;
 }
 
 .coaches-item:nth-child(3n) {
@@ -268,21 +382,46 @@ body {
 .coaches-item-name {
   margin: 0;
   margin-bottom: 17px;
+  font-weight: 500;
   font-size: 20px;
+  line-height: 120%;
+  color: #000;
 }
 
 .coaches-item-exp {
-  font-style: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #999;
 }
 
 /* reviews */
 
+.reviews {
+  background-color: #F4F4F4;
+}
+
+.reviews-container {
+  padding: 100px 0 90px;
+  font-family: "Jost", sans-serif;
+}
+
+.reviews-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: #000;
+}
+
 .reviews-list {
   display: flex;
+  align-items: flex-start;
 }
 
 .reviews-item {
   display: flex;
+  background-color: #fff;
 }
 
 .reviews-item-content {
@@ -312,6 +451,10 @@ body {
 .previews-item-descr {
   margin: 0;
   margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #444;
 }
 
 .previews-item-pepople {
@@ -321,6 +464,20 @@ body {
   height: 60px;
   padding-left: 80px;
   background-repeat: no-repeat;
+}
+
+.previews-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+}
+
+.previews-item-age {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #999;
 }
 
 .photo-maria {
@@ -337,8 +494,18 @@ body {
 
 /* news */
 
+.news-container {
+  padding: 100px 0 125px;
+  font-family: "Jost", sans-serif;
+}
+
 .news-title {
   text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .news-list {
@@ -370,36 +537,56 @@ body {
   background-image: url(../img/news-3.jpg);
 }
 
+.news-item-date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #999;
+}
+
 .news-item-descr {
   margin: 0;
-  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  color: #000;
 }
 
 /* footer */
 
+.footer-section {
+  background-color: #000;
+}
+
 .footer-container {
   padding: 83px 0 58px;
+  font-family: "Jost", sans-serif;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 60px;
   margin-bottom: 75px;
+}
+
+.footer-logo {
+  height: 60px;
 }
 
 .footer-menu-list {
   display: flex;
   justify-content: space-between;
   width: 365px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
 }
 
 .footer-menu-item:first-child {
   margin-bottom: 20px;
-}
-
-.footer-menu-item {
- font-size: 16px;
 }
 
 .footer-phone-social {
@@ -410,13 +597,26 @@ body {
 .footer-phone {
   margin-bottom: 20px;
   padding-left: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 111%;
+  text-transform: uppercase;
+  color: #95e82c;
   background-image: url(../img/phone-icon.svg);
   background-repeat: no-repeat;
   background-position: left center;
 }
 
+.footer-social-icon:not(:last-child) {
+  margin-right: 20px;
+}
+
 .footer-info {
   display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #666;
 }
 
 .footer-info-text1 {

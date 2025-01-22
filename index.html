@@ -6,6 +6,9 @@
   <title>Train Hard Фитнесс-Клуб</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -73,21 +76,21 @@
   </header>
 
   <main class="main">
-    <section id="services" class="services section-offset">
-      <div class="container">
+    <section id="services" class="services">
+      <div class="container services-container">
         <h2 class="section-title services-title">Наши услуги</h2>
         <ul class="services-list list-reset">
-          <li class="services-item">
+          <li class="services-item services-gym-pic">
             <h3 class="services-item-title">Тренажерный зал</h3>
             <span class="services-item-price">2500&nbsp;₽</span>
             <span class="services-item-month">в&nbsp;месяц</span>
           </li>
-          <li class="services-item">
+          <li class="services-item services-swim-pic">
             <h3 class="services-item-title">Бассейн</h3>
             <span class="services-item-price">1200&nbsp;₽</span>
             <span class="services-item-month">в&nbsp;месяц</span>
           </li>
-          <li class="services-item">
+          <li class="services-item services-pilates-pic">
             <h3 class="services-item-title">Пилатес</h3>
             <span class="services-item-price">1800&nbsp;₽</span>
             <span class="services-item-month">в&nbsp;месяц</span>
@@ -96,7 +99,7 @@
       </div>
     </section>
 
-    <section id="about-club" class="about-club section-offset">
+    <section id="about-club" class="about-club">
       <div class="container about-club-conrainer">
         <div class="about-content">
           <h2 class="section-title about-title">Train Hard</h2>
@@ -129,27 +132,29 @@
     </section>
 
     <article class="row">
-      <div class="container article-container">
-        <div class="row-social">
-          <a class="row-social-icon" href="#" target="_blank">
-            <img src="img/row-inst-icon.svg" alt="инстаграм">
-          </a>
-          <a class="row-social-icon" href="#" target="_blank">
-            <img src="img/row-vk-icon.svg" alt="вконтакте">
-          </a>
-          <a class="row-social-icon" href="#" target="_blank">
-            <img src="img/row-telega-icon.svg" alt="телеграм">
-          </a>
+      <section class="article-section">
+        <div class="container article-container">
+          <div class="row-social">
+            <a class="row-social-icon" href="#" target="_blank">
+              <img src="img/row-inst-icon.svg" alt="инстаграм">
+            </a>
+            <a class="row-social-icon" href="#" target="_blank">
+              <img src="img/row-vk-icon.svg" alt="вконтакте">
+            </a>
+            <a class="row-social-icon" href="#" target="_blank">
+              <img src="img/row-telega-icon.svg" alt="телеграм">
+            </a>
+          </div>
+          <img class="logo row-logo" src="img/logo.svg" alt="логотип">
+          <button class="btn-reset btn row-btn">
+            записаться
+          </button>
         </div>
-        <img class="logo row-logo" src="img/logo.svg" alt="логотип">
-        <button class="btn-reset btn row-btn">
-          записаться
-        </button>
-      </div>
+      </section>
     </article>
 
-    <section id="coaches" class="coaches section-offset">
-      <div class="container">
+    <section id="coaches" class="coaches">
+      <div class="container coaches-container">
         <h2 class="section-title coaches-title">
           наши тренеры
         </h2>
@@ -257,8 +262,8 @@
     </div>
     </section>
 
-    <section id="reviews" class="reviews section-offset">
-      <div class="container">
+    <section id="reviews" class="reviews">
+      <div class="container reviews-container">
         <h2 class="section-title reviews-title">
           отзывы наших клиентов
         </h2>
@@ -342,8 +347,8 @@
       </div>
     </section>
 
-    <section id="news" class="news section-offset">
-      <div class="container">
+    <section id="news" class="news">
+      <div class="container news-container">
         <h2 class="section-title news-title">
           новости
         </h2>
@@ -384,63 +389,65 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-content">
-          <a class="footer-logo" href="#" target="_blank">
-            <img src="img/logo.svg" alt="Логотип">
-          </a>
-        <nav class="footer-menu">
-          <ul class="footer-menu-list list-reset">
-            <div class="footer-menu-services-about">
-              <li class="footer-menu-item">
-                <a href="#services">Услуги</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="#about-club">О клубе</a>
-              </li>
-            </div>
-            <div class="footer-item-coaches-reviews">
-              <li class="footer-menu-item">
-                <a href="#coaches">Тренеры</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="#reviews">Отзывы</a>
-              </li>
-            </div>
-            <div class="footer-item-news-reviews-contacts">
-              <li class="footer-menu-item">
-                <a href="#news">Новости</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="#contacts">Контакты</a>
-              </li>
-            </div>
-          </ul>
-        </nav>
-        <div class="footer-phone-social">
-          <span class="footer-phone">
-            <a href="tel:+78005553050">8 800 555 30 50</a>
-          </span>
-          <div class="footer-social">
-            <a class="footer-social-icon" href="#" target="_blank">
-              <img src="img/inst-header-footer-icon.svg" alt="Инстаграм">
-            </a>
+    <section class="footer-section">
+      <div class="container footer-container">
+        <div class="footer-content">
             <a href="#" target="_blank">
-              <img src="img/vk-header-footer-icon.svg" alt="Вконтакте">
+              <img class="footer-logo" src="img/logo.svg" alt="Логотип">
             </a>
-            <a href="#" target="_blank">
-              <img src="img/telega-header-footer-icon.svg" alt="Телеграм">
-            </a>
+          <nav class="footer-menu">
+            <ul class="footer-menu-list list-reset">
+              <div class="footer-menu-services-about">
+                <li class="footer-menu-item">
+                  <a href="#services">Услуги</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="#about-club">О клубе</a>
+                </li>
+              </div>
+              <div class="footer-item-coaches-reviews">
+                <li class="footer-menu-item">
+                  <a href="#coaches">Тренеры</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="#reviews">Отзывы</a>
+                </li>
+              </div>
+              <div class="footer-item-news-reviews-contacts">
+                <li class="footer-menu-item">
+                  <a href="#news">Новости</a>
+                </li>
+                <li class="footer-menu-item">
+                  <a href="#contacts">Контакты</a>
+                </li>
+              </div>
+            </ul>
+          </nav>
+          <div class="footer-phone-social">
+            <span class="footer-phone">
+              <a href="tel:+78005553050">8 800 555 30 50</a>
+            </span>
+            <div class="footer-social">
+              <a class="footer-social-icon" href="#" target="_blank">
+                <img src="img/inst-header-footer-icon.svg" alt="Инстаграм">
+              </a>
+              <a class="footer-social-icon" href="#" target="_blank">
+                <img src="img/vk-header-footer-icon.svg" alt="Вконтакте">
+              </a>
+              <a class="footer-social-icon" href="#" target="_blank">
+                <img src="img/telega-header-footer-icon.svg" alt="Телеграм">
+              </a>
+            </div>
           </div>
+          <button class="btn-reset btn footer-btn">Записаться</button>
         </div>
-        <button class="btn-reset btn footer-btn">Записаться</button>
+        <div class="footer-info">
+          <p class="footer-info-text1">&copy; Train Hard 2022</p>
+          <p class="footer-info-text2">Политика конфиденциальности</p>
+          <p class="footer-info-text3">Разработка и маркетинг WebCanape</p>
+        </div>
       </div>
-      <div class="footer-info">
-        <p class="footer-info-text1">&copy; Train Hard 2022</p>
-        <p class="footer-info-text2">Политика конфиденциальности</p>
-        <p class="footer-info-text3">Разработка и маркетинг WebCanape</p>
-      </div>
-    </div>
+    </section>
   </footer>
 
 </body>
