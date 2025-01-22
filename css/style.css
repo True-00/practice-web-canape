@@ -22,6 +22,16 @@ body {
   min-width: 1200px;
 }
 
+@font-face {
+  font-family: "Jost";
+  src: url(../fonts/Jost-variable.woff);
+  src:local("Jost-variable"),
+  url('../fonts/Jost-variable.woff') format(woff),
+  url('../fonts/Jost-variable.woff2') format(woff2);
+  font-style: normal;
+  font-display: swap;
+}
+
 /* glob */
 .list-reset{
   margin: 0;
@@ -56,17 +66,26 @@ body {
 }
 
 /*header*/
-/* .header {
+
+.headedr-container {
+  padding: 50px 0 185px;
+
+}
+
+.header-section {
   background-image: url(../img/header-background.jpg);
-} */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .header-nav {
+  display: flex;
   align-items: center;
-  padding-top: 50px;
   margin-bottom: 50px;
 }
 
 .header-social {
+  display: flex;
   margin-right: auto;
   align-items: center;
 }
@@ -76,7 +95,12 @@ body {
 }
 
 .header-menu-list {
+  display: flex;
   margin-right: 112px;
+  text-transform: uppercase;
+  font-family: 'Jost';
+  font-weight: 500;
+  color: #fff;
 }
 
 .header-menu-item:not(:last-child) {
@@ -84,6 +108,7 @@ body {
 }
 
 .header-content {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -109,7 +134,12 @@ body {
   text-align: center;
 }
 
+.services-list {
+  display: flex;
+}
+
 .services-item {
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 185px 40px 47px;
@@ -133,6 +163,10 @@ body {
 
 /*about-club*/
 
+.about-club-conrainer {
+  display: flex;
+}
+
 .about-content {
   width: 680px;
   margin-right: 120px;
@@ -153,13 +187,12 @@ body {
 }
 
 .about-stats {
-  /* width: 380px;
-  height: 340px; */
+  display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .about-stat {
+  display: flex;
   /* outline: 1px black solid; */
   align-items: center;
 }
@@ -186,6 +219,7 @@ body {
 /* article */
 
 .article-container {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -205,10 +239,12 @@ body {
 }
 
 .coaches-list {
+  display: flex;
   flex-wrap: wrap;
 }
 
 .coaches-item {
+  display: flex;
   width: 380px;
   height: 120px;
   margin-right: 20px;
@@ -241,9 +277,13 @@ body {
 
 /* reviews */
 
-/* .reviews-item {
-  background-color:
-} */
+.reviews-list {
+  display: flex;
+}
+
+.reviews-item {
+  display: flex;
+}
 
 .reviews-item-content {
   padding: 30px;
@@ -301,6 +341,10 @@ body {
   text-align: center;
 }
 
+.news-list {
+  display: flex;
+}
+
 .news-item {
   width: 380px;
   background-repeat: no-repeat;
@@ -329,4 +373,56 @@ body {
 .news-item-descr {
   margin: 0;
   margin-bottom: 10px;
+}
+
+/* footer */
+
+.footer-container {
+  padding: 83px 0 58px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin-bottom: 75px;
+}
+
+.footer-menu-list {
+  display: flex;
+  justify-content: space-between;
+  width: 365px;
+}
+
+.footer-menu-item:first-child {
+  margin-bottom: 20px;
+}
+
+.footer-menu-item {
+ font-size: 16px;
+}
+
+.footer-phone-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-phone {
+  margin-bottom: 20px;
+  padding-left: 30px;
+  background-image: url(../img/phone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.footer-info {
+  display: flex;
+}
+
+.footer-info-text1 {
+  margin-right: 86px;
+}
+
+.footer-info-text2 {
+  margin-right: auto;
 }
