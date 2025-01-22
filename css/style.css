@@ -174,6 +174,7 @@ body {
 }
 
 .services-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,6 +183,26 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.services-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 6px;
+  background-image: url('../img/services-rectangle-top.svg');
+  background-size: cover;
+}
+
+.services-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 12px;
+  background-image: url('../img/services-rectangle-bottom.svg'); /* Путь к изображению */
+  background-size: cover;
 }
 
 .services-gym-pic {
@@ -199,6 +220,7 @@ body {
 .services-item:not(:nth-child(3n)){
   margin-right: 20px;
 }
+
 
 .services-item-title {
   margin: 0;
@@ -273,9 +295,13 @@ body {
   flex-direction: column;
 }
 
+.about-stat:nth-child(2) {
+  border-top: 2px #95E82C solid;
+  border-bottom: 2px #95E82C solid;
+}
+
 .about-stat {
   display: flex;
-  /* outline: 1px black solid; */
   align-items: center;
 }
 
@@ -364,6 +390,7 @@ body {
   margin-right: 20px;
   margin-bottom: 20px;
   outline: 1px #DDDDDD solid;
+  border-left: 6px #95E82C solid;
 }
 
 .coaches-item:nth-child(3n) {
