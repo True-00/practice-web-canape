@@ -58,6 +58,18 @@ body {
 
 /* --------------------------------------------------------------- */
 
+.header__mobile-phone {
+  display: none;
+}
+
+.header__mobile-logo {
+  display: none;
+}
+
+.header__mobile-menu {
+  display: none;
+}
+
 .header-hello {
   padding: 50px 0 185px;
   background-image: url(../img/header-background.jpg);
@@ -69,7 +81,8 @@ body {
   display: flex;
   max-width: 1180px;
   width: 100%;
-  margin: 0 auto 60px;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 .header__social {
@@ -183,10 +196,6 @@ body {
   height: 400px;
 }
 
-.services__image {
-  /* стили для картинки, если будут */
-}
-
 .services__item::before,
 .services__item::after {
   content: "";
@@ -209,7 +218,7 @@ body {
 
 .services__item-title {
   position: absolute;
-  top: 50%;
+  top: 46%;
   margin: 0;
   text-align: center;
   font-weight: 700;
@@ -329,6 +338,10 @@ body {
 
 /* --------------------------------------------------------------- */
 
+.article__mobile-logo {
+  display: none;
+}
+
 .article {
   background-image: url('../img/article-backgroung.jpg');
   background-repeat: no-repeat;
@@ -347,9 +360,7 @@ body {
 
 .article__social {
   display: flex;
-
   gap: 10px;
-  width: 200px;
   font-size: 0;
 }
 
@@ -414,7 +425,7 @@ body {
   color: #000;
 }
 
-.coaches__exp {
+.coaches__experience {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -451,7 +462,6 @@ body {
   margin: 0;
   padding: 0;
   gap: 20px;
-
   list-style: none;
 }
 
@@ -488,9 +498,9 @@ body {
   flex-direction: column;
   justify-content: center;
   padding-left: 80px;
-  width: 330px;
   height: 60px;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .reviews__name {
@@ -595,6 +605,8 @@ body {
 }
 
 .footer__container {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   padding: 83px 0 58px;
   max-width: 1180px;
@@ -613,7 +625,7 @@ body {
   height: 60px;
 }
 
-.footer__list {
+.footer__menu {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
