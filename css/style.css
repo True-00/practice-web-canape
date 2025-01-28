@@ -56,16 +56,8 @@ body {
   cursor: pointer;
 }
 
-@media (hover: hover) {
-  .button:hover {
-    background-color: #f6f6f6;
-  }
-}
-
-@media (hover: none) {
-  .button:active {
-    background-color: #f6f6f6;
-  }
+.button:hover {
+  background-color: #f6f6f6;
 }
 
 /* --------------------------------------------------------------- */
@@ -205,7 +197,7 @@ body {
 
 .services__list {
   display: flex;
-  flex-wrap: wrap;
+  margin: 0;
   padding: 0;
   gap: 20px;
   list-style: none;
@@ -701,21 +693,10 @@ body {
   text-decoration: none;
 }
 
-
-@media (hover: hover) {
-  .footer__phone:hover {
-    color: #fff;
-    filter: brightness(0) invert(1);
-  }
+.footer__phone:hover {
+  color: #fff;
+  filter: brightness(0) invert(1);
 }
-
-@media (hover: none) {
-  .footer__phone:active {
-    color: #fff;
-    filter: brightness(0) invert(1);
-  }
-}
-
 
 .footer__social {
   display: flex;
@@ -723,16 +704,8 @@ body {
   gap: 20px;
 }
 
-@media (hover: hover) {
-  .footer__social-icon:hover {
-    filter: brightness(0) invert(1);
-  }
-}
-
-@media (hover: none) {
-  .footer__social-icon:active {
-    filter: brightness(0) invert(1);
-  }
+.footer__social-icon:hover {
+  filter: brightness(0) invert(1);
 }
 
 .footer__icon {
