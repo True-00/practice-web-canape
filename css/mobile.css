@@ -8,7 +8,7 @@
   /* ----------------------------------------- */
 
   .header-hello {
-    padding: 20px 20px 70px;
+    padding: 20px 0 70px;
     background-position: 30% top;
   }
 
@@ -16,7 +16,6 @@
 
   .header__container {
     justify-content: space-between;
-    margin: 0 auto;
     margin-bottom: 93px;
     max-width: 300px;
   }
@@ -118,54 +117,59 @@
   }
   /* ---------------------------------------------- */
 
-  .about-club__content {
+  .about__content {
     flex-direction: column;
     margin-right: 0;
     margin-bottom: 28px;
   }
 
-  .about-club__container {
+  .about__container {
     margin: 0 auto;
     padding: 40px 0;
     max-width: 300px;
   }
 
-  .about-club__title {
+  .about__title {
     margin-bottom: 0;
     font-size: 40px;
     line-height: 1.25;
   }
 
-  .about-club__subtitle {
+  .about__subtitle {
     margin-bottom: 12px;
     font-size: 20px;
     line-height: 1.1;
   }
 
-  .about-club__descr {
+  .about__descr {
     font-size: 14px;
     line-height: 1.43;
   }
 
-  .about-club__stat-number {
+  .about__statistic {
+    align-content: flex-start;
+    width: 300px;
+  }
+
+  .about__stat-number {
     font-size: 48px;
     line-height: 1.15;
   }
 
-  .about-club__stat-description {
+  .about__stat-description {
     font-size: 18px;
     line-height: 1.22;
   }
 
-  .about-club__stat:not(:last-child) {
+  .about__stat:not(:last-child) {
     padding-bottom: 19px;
   }
 
-  .about-club__stat:not(:first-child) {
+  .about__stat:not(:first-child) {
     padding-top: 19px;
   }
 
-  .about-club__stat--bordered {
+  .about__stat--bordered {
     border-top: 2px solid #95E82C;
     border-bottom: 2px solid #95E82C;
   }

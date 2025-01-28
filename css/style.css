@@ -52,8 +52,20 @@ body {
   font-weight: 800;
   color: #000;
   text-transform: uppercase;
-  background: #95e82c;
+  background-color: #95e82c;
   cursor: pointer;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: #f6f6f6;
+  }
+}
+
+@media (hover: none) {
+  .button:active {
+    background-color: #f6f6f6;
+  }
 }
 
 /* --------------------------------------------------------------- */
@@ -92,6 +104,10 @@ body {
   gap: 20px;
 }
 
+.header__social-link:hover .header__social-icon {
+  filter: brightness(0) invert(1);
+}
+
 .header__menu {
   display: flex;
   margin: 0;
@@ -111,6 +127,10 @@ body {
   color: #fff;
 }
 
+.header__link:hover {
+  color: #95E82C;
+}
+
 .header__phone {
   display: flex;
   align-items: center;
@@ -119,6 +139,11 @@ body {
   background-repeat: no-repeat;
   background-position: left center;
   color: #95E82C;
+}
+
+.header__phone:hover {
+  color: #fff;
+  filter: brightness(0) invert(1);
 }
 
 /* --------------------------------------------------------------- */
@@ -254,7 +279,7 @@ body {
   background-color: #fff;
 }
 
-.about-club__container {
+.about__container {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -263,12 +288,12 @@ body {
   width: 100%;
 }
 
-.about-club__content {
+.about__content {
   max-width: 680px;
   margin-right: 120px;
 }
 
-.about-club__title {
+.about__title {
   margin: 0 0 17px;
   font-size: 55px;
   font-weight: 700;
@@ -277,7 +302,7 @@ body {
   text-transform: uppercase;
 }
 
-.about-club__subtitle {
+.about__subtitle {
   margin: 0 0 30px;
   font-size: 24px;
   font-weight: 500;
@@ -286,7 +311,7 @@ body {
   text-transform: uppercase;
 }
 
-.about-club__descr {
+.about__descr {
   max-width: 680px;
   margin: 0;
   font-size: 18px;
@@ -295,30 +320,30 @@ body {
   color: #444;
 }
 
-.about-club__statistic {
+.about__statistic {
   display: flex;
   flex-direction: column;
 }
 
-.about-club__stat {
+.about__stat {
   display: flex;
   align-items: center;
 }
 
-.about-club__stat:not(:last-child) {
+.about__stat:not(:last-child) {
   padding-bottom: 35px;
 }
 
-.about-club__stat:not(:first-child) {
+.about__stat:not(:first-child) {
   padding-top: 35px;
 }
 
-.about-club__stat--bordered {
+.about__stat--bordered {
   border-top: 2px solid #95E82C;
   border-bottom: 2px solid #95E82C;
 }
 
-.about-club__stat-number {
+.about__stat-number {
   margin: 0 23px 0 0;
 
   font-size: 55px;
@@ -328,7 +353,7 @@ body {
   color: #000;
 }
 
-.about-club__stat-description {
+.about__stat-description {
   margin: 0;
   font-size: 20px;
   font-weight: 500;
@@ -649,6 +674,10 @@ body {
   text-decoration: none;
 }
 
+.footer__link:hover {
+  color: #95E82C;
+}
+
 .footer__phone-social {
   display: flex;
   flex-direction: column;
@@ -667,15 +696,43 @@ body {
   text-transform: uppercase;
 }
 
-.footer__phone-link {
+.footer__phone {
   color: #95e82c;
   text-decoration: none;
 }
+
+
+@media (hover: hover) {
+  .footer__phone:hover {
+    color: #fff;
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (hover: none) {
+  .footer__phone:active {
+    color: #fff;
+    filter: brightness(0) invert(1);
+  }
+}
+
 
 .footer__social {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+@media (hover: hover) {
+  .footer__social-icon:hover {
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (hover: none) {
+  .footer__social-icon:active {
+    filter: brightness(0) invert(1);
+  }
 }
 
 .footer__icon {
