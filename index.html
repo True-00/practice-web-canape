@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="header-hello">
-    <div class="header">
+    <header class="header">
 
       <div class="header__container">
         <div class="header__social">
@@ -55,7 +55,7 @@
 
         <img class="header__mobile-menu" src="img/menu.svg" alt="меню">
       </div>
-    </div>
+    </header>
 
     <div class="hello">
       <div class="hello__container">
@@ -74,19 +74,19 @@
       <div class="services__container">
         <h2 class="services__title">Наши услуги</h2>
         <ul class="services__list">
-          <li class="services__item services__item--gym">
+          <li class="services__item">
             <img class="services__image" src="img/services-1.jpg" alt="Тренажерный зал">
-            <h3 class="services__item-title">Тренажерный зал</h3>
+            <h3 class="services__item-title"><span class="services__item-titlie--break">Тренажерный</span> зал</h3>
             <span class="services__price">2500&nbsp;₽</span>
             <span class="services__month">в&nbsp;месяц</span>
           </li>
-          <li class="services__item services__item--swim">
+          <li class="services__item">
             <img class="services__image" src="img/services-2.jpg" alt="Тренажерный зал">
             <h3 class="services__item-title">Бассейн</h3>
             <span class="services__price">1200&nbsp;₽</span>
             <span class="services__month">в&nbsp;месяц</span>
           </li>
-          <li class="services__item services__item--pilates">
+          <li class="services__item">
             <img class="services__image" src="img/services-3.jpg" alt="Тренажерный зал">
             <h3 class="services__item-title">Пилатес</h3>
             <span class="services__price">1800&nbsp;₽</span>
@@ -434,5 +434,49 @@
       </div>
     </div>
   </footer>
+
+  <div class="adaptive__burger">
+    <div class="adaptive__container">
+      <img class="adaptive__close" src="img/adapt__close-icon.svg" alt="закрыть">
+
+        <ul class="adaptive__menu">
+          <li class="adaptive__item">
+            <a class="adaptive__link" href="#services">услуги</a>
+          </li>
+          <li class="adaptive__item">
+            <a class="adaptive__link" href="#about-club">о клубе</a>
+          </li>
+          <li class="adaptive__item">
+            <a class="adaptive__link" href="#coaches">тренеры</a>
+          </li>
+          <li class="adaptive__item">
+            <a class="adaptive__link" href="#reviews">отзывы</a>
+          </li>
+          <li class="adaptive__item">
+            <a class="adaptive__link" href="#news">новости</a>
+          </li>
+          <li class="adaptive__item">
+            <a class="adaptive__link" href="#contacts">контакты</a>
+          </li>
+        </ul>
+
+        <a class="adaptive__phone" href="tel:+78005553050">8 800 555 30 50</a>
+
+        <div class="adaptive__social">
+          <a class="adaptive__social-icon" href="#" target="_blank">
+            <img src="img/inst-header-footer-icon.svg" alt="Инстаграм">
+          </a>
+          <a class="adaptive__social-icon" href="#" target="_blank">
+            <img src="img/vk-header-footer-icon.svg" alt="Вконтакте">
+          </a>
+          <a class="adaptive__social-icon" href="#" target="_blank">
+            <img src="img/telega-header-footer-icon.svg" alt="Телеграм">
+          </a>
+        </div>
+
+        <button class="button">Записаться</button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

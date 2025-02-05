@@ -43,7 +43,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 209px;
+  width: 210px;
   height: 60px;
   padding: 0;
   border: none;
@@ -59,11 +59,11 @@ body {
 .button:hover {
   background-color: #f6f6f6;
 }
-
 /* --------------------------------------------------------------- */
 
 .header__mobile-phone {
   display: none;
+  cursor: pointer;
 }
 
 .header__mobile-logo {
@@ -72,6 +72,7 @@ body {
 
 .header__mobile-menu {
   display: none;
+  cursor: pointer;
 }
 
 .header-hello {
@@ -144,15 +145,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1180px;
+  width: 100%;
 }
 
 .hello__logo {
   width: 110px;
-  margin-bottom: 60px;
+  margin-bottom: 105px;
 }
 
 .hello__title {
   margin: 0 0 14px;
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 55px;
@@ -180,7 +185,7 @@ body {
 
 .services__container {
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px 0 95px;
   max-width: 1180px;
   width: 100%;
 }
@@ -206,9 +211,7 @@ body {
 .services__item {
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 380px;
   height: 400px;
 }
@@ -731,4 +734,73 @@ body {
 
 .footer__info-text:last-child {
   margin-left: auto;
+}
+
+/* --------------------------------------------------------------- */
+
+.adaptive__burger {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.adaptive__burger.active {
+  display: block;
+}
+
+.adaptive__container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 82px 50px;
+  width: 340px;
+  height: 570px;
+  background-color: #000;
+}
+
+.adaptive__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 51px;
+  padding: 0;
+  gap: 30px;
+  list-style: none;
+}
+
+.adaptive__item {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+  color: #fff;
+}
+
+.adaptive__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+}
+
+.adaptive__phone {
+  margin-bottom: 34px;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 1.11;
+  background-image: url(../img/phone-icon.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #95E82C;
+}
+
+.adaptive__social {
+  display: flex;
+  align-items: center;
+  margin-bottom: auto;
+  gap: 20px;
 }
